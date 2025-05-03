@@ -1,0 +1,56 @@
+// Extension .pug =>compareto html file,readable code.
+// template Most IMP Topic.
+
+html 
+    head 
+        title My Page
+    body 
+        // 1.
+        h1 LJU
+        // 2.
+        h1(style="color:red") Lets Learn 
+        // 3.
+        p(style="font-size:25px") 
+            i italic para   
+                b(style="color:blue") bold italic para
+            b bold para
+        // 4.
+        p   
+            | The file will not be.
+            | render properly if the
+            | Programmer does not make
+            | sure of proper indentation 
+        // 5. 
+        ul 
+            li Mango
+            li Watermelon
+        // 6. 
+        ol(type="A") 
+            li January
+            li February
+        // 7. Attributes Spannig Over Multiple Lines.
+        a(
+            href="/" 
+            target="_blank" 
+            style="color:purple;font-size:20px"
+        ) About
+        // 8. Multiple attributes seprated by comma.
+        table(border="1px solid",style="color:red")
+            tr 
+                th name     
+                th id 
+            tr
+                td yash
+                td 1
+        // 9. unbuffered code
+        -var number=2
+        -var color="Black"
+        -var list=["India","USA","UK"]
+        // 10. Buffered code
+        h4= "3 times number is : "+number*3
+        h5= "I Like" +color+ "Color"
+        h6= "Country : "+list[2]
+        // This is Buffered Comment.
+        //- This is  Unbuffered  Comment It does not appear in rendered HTML file.
+        // 
+            This is a multiple line comment
