@@ -1,0 +1,14 @@
+// create a pug file=>text,email ny submittiong form,on next page "/data",submited data should be displayed.
+
+
+html 
+    body 
+        form(action="/data",method="get")
+            div 
+                label Enter Name : 
+                input(type="text" name="fname") 
+            div
+                label Email : 
+                input(type="email" name="email")
+            div
+                input(type="submit" value="submit")
