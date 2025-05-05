@@ -1,0 +1,15 @@
+//- write pug file => name,email,course(radio ;CE,IT,CSE) once form dubmitted data displayed "/data" page using pug file.
+
+html 
+    body
+        form(action="/data",method="post")
+            label Name
+            input(type="text",name="dname")
+            label Email
+            input(type="email",name="email")
+            label Course
+            input(type="radio",name="course",value="IT") 
+            | IT 
+            input(type="radio",name="course",value="CE")
+            | CE
+            input(type="submit" value="Submit")
