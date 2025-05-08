@@ -1,0 +1,18 @@
+<!--  multer : upload multiple files.
+    var storage = multer.diskStorage({
+        destination:"xyz"
+        filenmae:function(req,file,cb){
+            cb(null,file.originalname)
+        }
+    }) -->
+
+    <html>
+
+    <body>
+        <form action="/uploadfile" method="post" enctype="multipart/form-data">
+            <input type="file" name="lju" accept=".pdf" />
+            <input type="submit" value="upload">
+        </form>
+    </body>
+    
+    </html>

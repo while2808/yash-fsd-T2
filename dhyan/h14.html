@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>User Feedback Form</title>
+  </head>
+  <body>
+    <form action="/submit-feedback" method="POST">
+      <fieldset>
+        <legend>User Feedback Form</legend>
+        Name:
+        <input type="text" id="name" name="name" required /><br /><br />
+        Email:
+        <input type="email" id="email" name="email" required /><br /><br />
+        Message:
+        <textarea id="message" name="message" required></textarea><br /><br />
+        Rating:
+        <input type="radio" id="rating1" name="rating" value="Bad" required />
+        Bad
+        <input type="radio"  id="rating2" name="rating" value="Average" required
+        />
+        Average
+        <input type="radio" id="rating3" name="rating" value="Good" required />
+        Good
+        <br />
+        <br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
